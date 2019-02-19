@@ -24,8 +24,8 @@
   </developers>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>8</maven.compiler.source>
-    <maven.compiler.target>8</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
     <!-- Indirection needed to keep optionnal jacoco settings and external argument lines-->
     <arg.line></arg.line>
     <argLine>${arg.line}</argLine>
@@ -63,6 +63,7 @@
         <configuration>
           <useSystemClassLoader>false</useSystemClassLoader>
           <rerunFailingTestsCount>5</rerunFailingTestsCount>
+          <skipTests>true</skipTests>
         </configuration>
       </plugin>
       <plugin>
